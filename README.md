@@ -19,7 +19,7 @@ This is a tutorial of how tp train the MobileNet-SSD detection network. The impl
 
 ### Train MobileNet-SSD network
 1. Go to caffe/examples/MobileNet-SSD
-2. Run `bash gen_model.sh n` where n is the number of your classes defined in MyDataSet/labelmap_voc.prototxt. If you have 10 classes defined in MyDataSet/labelmap_voc.prototxt, run `bash gen_model.sh 11` (10 + 1 where 1 refers to the backgroud classes).
+2. Run `gen_model.sh` where n is the number of your classes defined in MyDataSet/labelmap_voc.prototxt.
 3. Create symlinks.
 ```
 ln -s PATH_TO_YOUR_TRAIN_LMDB trainval_lmdb
